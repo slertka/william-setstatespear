@@ -16,13 +16,7 @@ class App extends Component {
         </header>
         <main>
           <Route exact path="/" component={PoemListPage} />
-          <Route
-            path="poem/:poemId"
-            component={props => {
-              console.log(props);
-              return <div />;
-            }}
-          />
+          <Route path="/poem/:poemId" component={PoemPage} />
         </main>
         <footer>
           <p>© WilliamSetstatespear, 2018. All Rights Reserved.</p>
